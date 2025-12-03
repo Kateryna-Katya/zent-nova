@@ -963,3 +963,68 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
     .roadmap { grid-template-columns: 1fr; }
     .cookie-popup__content { flex-direction: column; text-align: center; }
 }
+/* =========================================
+   LEGAL PAGES STYLES
+   ========================================= */
+   .pages {
+    padding-top: 140px; /* Отступ от хедера */
+    padding-bottom: 80px;
+}
+
+.pages__title {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--color-text);
+}
+
+.pages__content {
+    max-width: 800px; /* Ограничиваем ширину текста для удобства чтения */
+}
+
+.pages__content h2 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--color-text);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.pages__content p {
+    color: var(--color-text-muted);
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.pages__content ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: var(--color-text-muted);
+}
+
+.pages__content li {
+    margin-bottom: 12px;
+}
+
+.pages__content strong {
+    color: var(--color-text);
+}
+
+.pages__content a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.pages__content a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .pages__title {
+        font-size: 2.2rem;
+    }
+}
